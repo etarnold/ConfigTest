@@ -23,12 +23,231 @@
         }
     ],
     "hmi": {
-        "views": [],
+        "views": [
+            {
+                "id": "vw_14f10759-67eb4cd7",
+                "name": "MainView",
+                "type": "view",
+                "config": {
+                    "width": 1024,
+                    "height": 760,
+                    "style": {},
+                    "sizeMode": "normal"
+                },
+                "components": []
+            },
+            {
+                "id": "vw_1c4a7329-6c16448e",
+                "name": "View_4",
+                "type": "view",
+                "config": {
+                    "width": 1024,
+                    "height": 760,
+                    "style": {},
+                    "sizeMode": "normal"
+                },
+                "components": []
+            },
+            {
+                "id": "vw_59dcdfa5-b5044fb9",
+                "name": "View_5",
+                "type": "view",
+                "config": {
+                    "width": 1024,
+                    "height": 760,
+                    "style": {},
+                    "sizeMode": "normal"
+                },
+                "components": []
+            },
+            {
+                "id": "vw_74a5339f-af5f4b53",
+                "name": "View_6",
+                "type": "view",
+                "config": {
+                    "width": 1024,
+                    "height": 760,
+                    "style": {},
+                    "sizeMode": "normal"
+                },
+                "components": [
+                    {
+                        "id": "nvw_efda-4482",
+                        "viewId": "vw_f56dc15c-40e94a41",
+                        "type": "view",
+                        "typeAbbr": "nvw_",
+                        "comptName": "View_1",
+                        "visibility": true,
+                        "w": 1024,
+                        "h": 760,
+                        "y": 0,
+                        "x": 0,
+                        "zIndex": 0,
+                        "rotationAngle": 0,
+                        "sizeMode": "normal",
+                        "config": {
+                            "buttonMode": "false",
+                            "style": {}
+                        },
+                        "animation": {
+                            "backgroundColor": "",
+                            "border": "",
+                            "visibility": "",
+                            "rotation": ""
+                        },
+                        "events": {
+                            "click": ""
+                        }
+                    },
+                    {
+                        "id": "nvw_814a-2523",
+                        "viewId": "vw_9dcf1b16-3bf048f2",
+                        "type": "view",
+                        "typeAbbr": "nvw_",
+                        "comptName": "View_2",
+                        "visibility": true,
+                        "w": 1024,
+                        "h": 760,
+                        "y": 0,
+                        "x": 0,
+                        "zIndex": 0,
+                        "rotationAngle": 0,
+                        "sizeMode": "normal",
+                        "config": {
+                            "buttonMode": "false",
+                            "style": {}
+                        },
+                        "animation": {
+                            "backgroundColor": "",
+                            "border": "",
+                            "visibility": "",
+                            "rotation": ""
+                        },
+                        "events": {
+                            "click": ""
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "vw_9dcf1b16-3bf048f2",
+                "name": "View_2",
+                "type": "view",
+                "config": {
+                    "width": 1024,
+                    "height": 760,
+                    "style": {},
+                    "sizeMode": "normal"
+                },
+                "components": []
+            },
+            {
+                "id": "vw_b4c4c3a9-70924977",
+                "name": "View_8",
+                "type": "view",
+                "config": {
+                    "width": 1024,
+                    "height": 760,
+                    "style": {},
+                    "sizeMode": "normal"
+                },
+                "components": []
+            },
+            {
+                "id": "vw_e97c06f9-78204c4a",
+                "name": "View_3",
+                "type": "view",
+                "config": {
+                    "width": 1024,
+                    "height": 760,
+                    "style": {},
+                    "sizeMode": "normal"
+                },
+                "components": []
+            },
+            {
+                "id": "vw_eaaa4649-151048ab",
+                "name": "View_7",
+                "type": "view",
+                "config": {
+                    "width": 1024,
+                    "height": 760,
+                    "style": {},
+                    "sizeMode": "normal"
+                },
+                "components": []
+            },
+            {
+                "id": "vw_f56dc15c-40e94a41",
+                "name": "View_1",
+                "type": "view",
+                "config": {
+                    "width": 1024,
+                    "height": 760,
+                    "style": {},
+                    "sizeMode": "normal"
+                },
+                "components": []
+            }
+        ],
         "general": {
-            "defaultViewId": "vw_967254dc-984441ef",
+            "defaultViewId": "vw_f56dc15c-40e94a41",
             "mainView": null,
             "mainNavBtn": false,
-            "viewsTree": []
+            "viewsTree": [
+                {
+                    "name": "MainView",
+                    "type": "view",
+                    "id": "vw_14f10759-67eb4cd7"
+                },
+                {
+                    "name": "View_1",
+                    "type": "view",
+                    "id": "vw_f56dc15c-40e94a41"
+                },
+                {
+                    "name": "View_2",
+                    "type": "view",
+                    "id": "vw_9dcf1b16-3bf048f2"
+                },
+                {
+                    "name": "View_3",
+                    "type": "view",
+                    "id": "vw_e97c06f9-78204c4a"
+                },
+                {
+                    "name": "View_4",
+                    "type": "view",
+                    "id": "vw_1c4a7329-6c16448e"
+                },
+                {
+                    "name": "View_5",
+                    "type": "view",
+                    "id": "vw_59dcdfa5-b5044fb9"
+                },
+                {
+                    "name": "Folder_1",
+                    "type": "folder",
+                    "id": "fold_73905d4e-8e734dda",
+                    "children": [
+                        {
+                            "name": "View_6",
+                            "type": "view",
+                            "id": "vw_74a5339f-af5f4b53"
+                        }
+                    ]
+                },
+                {
+                    "name": "View_7",
+                    "type": "view",
+                    "id": "vw_eaaa4649-151048ab"
+                },
+                {
+                    "name": "View_8",
+                    "type": "view",
+                    "id": "vw_b4c4c3a9-70924977"
+                }
+            ]
         }
     },
     "charts": []
