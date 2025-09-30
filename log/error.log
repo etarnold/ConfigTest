@@ -1,0 +1,8 @@
+2025-09-29 19:04:45: (server.c.1939) server started (lighttpd/1.4.76)
+2025-09-29 19:04:45: (configfile.c.1397) WARNING: unknown config-key: auth.debug (ignored)
+2025-09-29 19:06:14: (server.c.2350) server stopped by UID = 501 PID = 93109
+2025-09-29 19:06:14: (server.c.1939) server started (lighttpd/1.4.76)
+2025-09-29 19:06:14: (configfile.c.1397) WARNING: unknown config-key: auth.debug (ignored)
+2025-09-29 19:07:52: (server.c.2350) server stopped by UID = 501 PID = 94133
+2025-09-29 19:07:53: (server.c.1939) server started (lighttpd/1.4.76)
+2025-09-29 19:07:53: (configfile.c.1397) WARNING: unknown config-key: auth.debug (ignored)

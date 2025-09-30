@@ -1,0 +1,62 @@
+{
+   "database": {
+      "settings": {
+         "persistanceUpdateTime": 10,
+         "maxDaysToLog": 5
+      },
+      "tags": {}
+   },
+   "modules": [
+      {
+         "enabled": true,
+         "uniqueId": "abcd1234_cpustats",
+         "moduleId": "com.iot-eq.module.cpustats",
+         "module": "cpustats",
+         "name": "Duro 1 CPU Status",
+         "type": "Info",
+         "config": {
+            "checkTime": 10
+         }
+      }
+   ],
+   "hmi": {
+      "views": [
+         {
+            "id": "vw_c35f6446-93674fad",
+            "name": "MainView",
+            "type": "view",
+            "config": {
+               "width": 1024,
+               "height": 768,
+               "style": {
+                  "fontFamily": "None",
+                  "font-weight": "none",
+                  "fontSize.px": 16,
+                  "color": "#000000",
+                  "backgroundColor": "#ffffffff",
+                  "borderRadius.px": 0,
+                  "borderStyle": "solid",
+                  "borderColor": "#00000000",
+                  "borderWidth.px": 0,
+                  "boxShadow": "0px 0px 0px 0px #000000"
+               },
+               "sizeMode": "normal"
+            },
+            "components": []
+         }
+      ],
+      "general": {
+         "defaultViewId": "vw_c35f6446-93674fad",
+         "mainView": null,
+         "mainNavBtn": false,
+         "viewsTree": [
+            {
+               "name": "MainView",
+               "type": "view",
+               "id": "vw_c35f6446-93674fad"
+            }
+         ]
+      }
+   },
+   "charts": []
+}

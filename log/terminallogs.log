@@ -1,0 +1,12 @@
+2025-09-29 19:07:53,663 - MainThread - __sys_main__ - INFO - Hardware configuration parsed and loaded successfully (logfaults.py:147)
+2025-09-29 19:07:53,664 - MainThread - __sys_main__ - INFO - Config file parsed and loaded successfully (logfaults.py:147)
+ERROR: Persistence Filename not found:  /Users/earnold/Documents/ioTEQ/ConfigTest/DuroControl/var/config/db_persistance.sqlite
+       A New file will be created
+Starting SD Flash Drive
+2025-09-29 19:07:53,685 - MainThread - backplane - INFO - Backplane is disabled (logfaults.py:147)
+2025-09-29 19:07:53,686 - MainThread - __sys_main__ - INFO - Starting the Awesome! (logfaults.py:147)
+2025-09-29 19:07:53,686 - MainThread - __sys_main__ - INFO - Host device: IOT-VIRTUAL-DURO (logfaults.py:147)
+2025-09-29 19:07:53,686 - MainThread - __sys_main__ - INFO - Running Modules (logfaults.py:147)
+2025-09-29 19:07:53,787 - MainThread - __sys_main__ - INFO - File size is already below 4 MB. Not reducing the file. (logfaults.py:147)
+2025-09-29 19:09:45,067 - MainThread - __sys_main__ - CRITICAL - Keyboard Interrupt - exiting program (logfaults.py:147)
+2025-09-29 19:09:45,068 - MainThread - __sys_main__ - WARNING - Module com.iot-eq.module.cpustats stopped (logfaults.py:147)

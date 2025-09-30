@@ -1,0 +1,1098 @@
+{
+   "Hardware": {
+      "Version": "1.1",
+      "Name": "Duro1"
+   },
+   "Backplane": {
+      "Enabled": false,
+      "Port": "/dev/ttymxc2",
+      "Baudrate": 115200,
+      "IOCards": [
+         {
+            "Name": "Analog Outputs",
+            "Addr": 1,
+            "type": 11,
+            "rootTag": "D3",
+            "dataTemplate": "AnalogOutputCard_11",
+            "driver": "analogOutputs.py"
+         },
+         {
+            "Name": "Analog In",
+            "Addr": 4,
+            "type": 1,
+            "rootTag": "D2",
+            "dataTemplate": "AnalogInputCard_1",
+            "driver": "analogInputs.py"
+         },
+         {
+            "Name": "Analog In",
+            "Addr": 5,
+            "type": 1,
+            "rootTag": "D1",
+            "dataTemplate": "AnalogInputCard_1",
+            "driver": "analogInputs.py"
+         }
+      ]
+   },
+   "database": {
+      "tags": {
+         "LocalIO": {
+            "datatype": "Folder",
+            "arraydim": 1,
+            "children": {
+               "D3": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "name": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "8 Channels Analog Output Board",
+                        "config": {}
+                     },
+                     "version": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "0.0",
+                        "config": {}
+                     },
+                     "status": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     },
+                     "statusText": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "",
+                        "config": {}
+                     },
+                     "Outputs": {
+                        "datatype": "Folder",
+                        "arraydim": 8,
+                        "config": {},
+                        "children": {
+                           "name": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "",
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "currentRawValue": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "rawValue": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "scaledValue": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "unitsZero": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "unitsScale": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 1,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rawAtZero": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rawAtScale": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 4096,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "units": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "",
+                              "config": {
+                                 "persistent": true
+                              }
+                           }
+                        }
+                     }
+                  }
+               },
+               "D2": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "name": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "Analog 4..20 mA",
+                        "config": {}
+                     },
+                     "status": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 1234.56,
+                        "config": {}
+                     },
+                     "statusText": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "",
+                        "config": {}
+                     },
+                     "Inputs": {
+                        "datatype": "Folder",
+                        "arraydim": 8,
+                        "config": {},
+                        "children": {
+                           "name": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "",
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rawValue": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "scaledValue": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "unitsZero": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 4,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "unitsScale": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 20,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rawAtZero": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 4,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rawAtScale": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 20,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rollingAverage": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 1,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "units": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "mA",
+                              "config": {
+                                 "persistent": true
+                              }
+                           }
+                        }
+                     }
+                  }
+               },
+               "D1": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "name": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "Analog 4..20 mA",
+                        "config": {}
+                     },
+                     "status": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 1234.56,
+                        "config": {}
+                     },
+                     "statusText": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "",
+                        "config": {}
+                     },
+                     "Inputs": {
+                        "datatype": "Folder",
+                        "arraydim": 8,
+                        "config": {},
+                        "children": {
+                           "name": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "",
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rawValue": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "scaledValue": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "unitsZero": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 4,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "unitsScale": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 20,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rawAtZero": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 4,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rawAtScale": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 20,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "rollingAverage": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 1,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "units": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "mA",
+                              "config": {
+                                 "persistent": true
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "Duro1": {
+            "datatype": "Folder",
+            "arraydim": 1,
+            "config": {},
+            "children": {
+               "DateTime": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "dateTime": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "",
+                        "config": {
+                           "editable": false
+                        }
+                     },
+                     "Time": {
+                        "datatype": "Folder",
+                        "arraydim": 1,
+                        "config": {},
+                        "children": {
+                           "time": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "",
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "offsetUTC": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "persistent": true
+                              }
+                           },
+                           "hour": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "minutes": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "seconds": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           }
+                        }
+                     },
+                     "Date": {
+                        "datatype": "Folder",
+                        "arraydim": 1,
+                        "config": {},
+                        "children": {
+                           "date": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "",
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "month": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "day": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "year": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "prevDate": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "",
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "prevMonth": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "prevDay": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "prevYear": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           }
+                        }
+                     }
+                  }
+               },
+               "ModuleName": {
+                  "arraydim": 1,
+                  "datatype": "Text",
+                  "value": "Duro-1",
+                  "config": {
+                     "persistent": true
+                  }
+               },
+               "DeviceType": {
+                  "arraydim": 1,
+                  "datatype": "Text",
+                  "value": "IOT-DURO-1",
+                  "config": {
+                     "editable": false
+                  }
+               },
+               "Version": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "version_major": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "editable": false
+                        }
+                     },
+                     "version_minor": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "editable": false
+                        }
+                     },
+                     "release": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "editable": false
+                        }
+                     },
+                     "Firmware": {
+                        "datatype": "Folder",
+                        "arraydim": 1,
+                        "config": {},
+                        "children": {
+                           "version_major": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "version_minor": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "release": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           }
+                        }
+                     },
+                     "Config": {
+                        "datatype": "Folder",
+                        "arraydim": 1,
+                        "config": {},
+                        "children": {
+                           "version_major": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": true,
+                                 "persistent": true
+                              }
+                           },
+                           "version_minor": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": true,
+                                 "persistent": true
+                              }
+                           },
+                           "release": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": true,
+                                 "persistent": true
+                              }
+                           }
+                        }
+                     }
+                  }
+               },
+               "CPU": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "RAM": {
+                        "arraydim": 1,
+                        "datatype": "Folder",
+                        "config": {},
+                        "children": {
+                           "total": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "inuse": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "free": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "usepercent": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "warningLevel": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "persistent": true,
+                                 "editable": false
+                              }
+                           },
+                           "errorFlag": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           }
+                        }
+                     },
+                     "FLASH": {
+                        "arraydim": 1,
+                        "datatype": "Folder",
+                        "config": {},
+                        "children": {
+                           "total": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "inuse": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "free": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "usepercent": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "warningLevel": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "persistent": true,
+                                 "editable": false
+                              }
+                           },
+                           "errorFlag": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           }
+                        }
+                     },
+                     "status": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "editable": false
+                        }
+                     },
+                     "warmBoot": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     },
+                     "coldBoot": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     },
+                     "temperature": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "Not Available",
+                        "config": {
+                           "editable": false
+                        }
+                     },
+                     "upTime": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "editable": false
+                        }
+                     },
+                     "uniqueId": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": "",
+                        "config": {
+                           "editable": false
+                        }
+                     },
+                     "CPUUtilization": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "editable": false,
+                           "hidden": true
+                        }
+                     },
+                     "NetworkIO": {
+                        "arraydim": 1,
+                        "datatype": "Text",
+                        "value": 0,
+                        "config": {
+                           "editable": false,
+                           "hidden": true
+                        }
+                     },
+                     "MonitorNewTab": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 1,
+                        "config": {
+                           "persistent": true,
+                           "hidden": true
+                        }
+                     }
+                  }
+               },
+               "eStop": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "status": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "editable": false
+                        }
+                     },
+                     "request": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     },
+                     "clear": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     }
+                  }
+               },
+               "Network": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "RemoteConnections": {
+                        "arraydim": 1,
+                        "datatype": "Folder",
+                        "config": {},
+                        "children": {
+                           "Connection": {
+                              "arraydim": 50,
+                              "datatype": "Folder",
+                              "config": {},
+                              "children": {
+                                 "IP": {
+                                    "arraydim": 1,
+                                    "datatype": "Text",
+                                    "value": "",
+                                    "config": {
+                                       "persistent": false,
+                                       "historic": false
+                                    }
+                                 },
+                                 "SessionID": {
+                                    "arraydim": 1,
+                                    "datatype": "Text",
+                                    "value": "",
+                                    "config": {
+                                       "persistent": false,
+                                       "historic": false
+                                    }
+                                 },
+                                 "CommandTimestamp": {
+                                    "arraydim": 1,
+                                    "datatype": "Text",
+                                    "value": "",
+                                    "config": {
+                                       "persistent": false,
+                                       "historic": false
+                                    }
+                                 },
+                                 "Command": {
+                                    "arraydim": 1,
+                                    "datatype": "Text",
+                                    "value": "",
+                                    "config": {
+                                       "persistent": false,
+                                       "historic": false
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     },
+                     "LAN": {
+                        "arraydim": 1,
+                        "datatype": "Folder",
+                        "config": {},
+                        "children": {
+                           "name": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "Ethernet Network",
+                              "config": {}
+                           },
+                           "interface": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "Not Available",
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "ip": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "Not Available",
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "netmask": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "Not Available",
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "mac_addr": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "Not Available",
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "gateway": {
+                              "arraydim": 1,
+                              "datatype": "Text",
+                              "value": "Not Available",
+                              "config": {
+                                 "editable": false
+                              }
+                           },
+                           "DHCP": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {
+                                 "editable": false
+                              }
+                           }
+                        }
+                     },
+                     "Timeout": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "editable": true,
+                           "hidden": false
+                        }
+                     }
+                  }
+               },
+               "SD": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "SDPresent": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     },
+                     "DuroControl": {
+                        "arraydim": 1,
+                        "datatype": "Folder",
+                        "config": {},
+                        "children": {
+                           "Mounted": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "Total": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "Used": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "Free": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "Percent": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           }
+                        }
+                     },
+                     "Logs": {
+                        "arraydim": 1,
+                        "datatype": "Folder",
+                        "config": {},
+                        "children": {
+                           "Mounted": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "Total": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "Used": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "Free": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           },
+                           "Percent": {
+                              "arraydim": 1,
+                              "datatype": "Number",
+                              "value": 0,
+                              "config": {}
+                           }
+                        }
+                     }
+                  }
+               },
+               "ProjectLogs": {
+                  "arraydim": 1,
+                  "datatype": "Folder",
+                  "config": {},
+                  "children": {
+                     "Total": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     },
+                     "Used": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     },
+                     "Free": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     },
+                     "Percent": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {}
+                     }
+                  }
+               },
+               "MQTT": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "Enable": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "persistent": true
+                        }
+                     }
+                  }
+               },
+               "OTA": {
+                  "datatype": "Folder",
+                  "arraydim": 1,
+                  "config": {},
+                  "children": {
+                     "OTADownloadPercentage": {
+                        "arraydim": 1,
+                        "datatype": "Number",
+                        "value": 0,
+                        "config": {
+                           "persistent": true
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "modules": {
+      "disableComms": false
+   }
+}
